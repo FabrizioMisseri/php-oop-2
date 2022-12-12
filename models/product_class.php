@@ -12,9 +12,14 @@ class Product
         $this->code = $code;
     }
 
+
+    // debug-function
     public function printProduct()
     {
         $variable = "$this->name, " . $this->price . ", $this->code.";
         return $variable;
     }
 }
+
+
+require_once __DIR__ . "./products_classes.php";

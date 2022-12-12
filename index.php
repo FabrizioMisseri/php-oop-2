@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "./models/category_class.php";
-require_once __DIR__ . "./models/product_classes.php";
+require_once __DIR__ . "./models/product_class.php";
 
 $croccantini = new Product('pollo', 23, 'adefrrt');
-echo $croccantini->printProduct();
+
+var_dump($croccantini);
