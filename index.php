@@ -20,7 +20,7 @@ require_once __DIR__ . "/database/database.php";
 </head>
 
 <body>
-    <div class="container">
+    <div class="container my_wrapper">
         <div class="row">
             <?php foreach ($array_data as $product) { ?>
                 <div class="col-4 my_card-box">
