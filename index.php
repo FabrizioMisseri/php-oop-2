@@ -49,6 +49,9 @@ require_once __DIR__ . "/database/database.php";
                             <!-- verifica per FOODS -->
                             <?php if (get_class($product) == 'Food') { ?>
                                 <li>
+                                    tipo: cibo
+                                </li>
+                                <li>
                                     peso: <?php echo $product->weight ?>
                                 </li>
                                 <li>
@@ -60,6 +63,9 @@ require_once __DIR__ . "/database/database.php";
                                 <!-- verifica per TOYS -->
                             <?php } else if (get_class($product) == 'Toys') { ?>
                                 <li>
+                                    tipo: gioco
+                                </li>
+                                <li>
                                     larghezza: <?php echo $product->width ?>
                                 </li>
                                 <li>
@@ -70,6 +76,9 @@ require_once __DIR__ . "/database/database.php";
                                 </li>
                                 <!-- verifica per KENNEL -->
                             <?php } else if (get_class($product) == 'Kennel') { ?>
+                                <li>
+                                    tipo: cuccia
+                                </li>
                                 <li>
                                     larghezza: <?php echo $product->width ?>
                                 </li>
