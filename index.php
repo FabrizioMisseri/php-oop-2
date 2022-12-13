@@ -29,7 +29,19 @@ require_once __DIR__ . "/database/database.php";
                             <?php echo $product->name ?>
                         </h4>
                         <ul>
-                            <li></li>
+                            <li>
+                                <?php echo "codice-articolo: " . $product->code ?>
+                            </li>
+                            <li>
+                                <?php echo "prezzo: " . $product->price ?>
+                            </li>
+                            <li>
+                                <?php if ($product->category == $dog) {
+                                    echo "animale: cane";
+                                } else {
+                                    echo "animale: gatto";
+                                } ?>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -10,5 +10,5 @@ $array_data = [
 
     'lettiera-romeo' => new Kennel($cat, 'lettiera-romeo', 10, 'sgdgdgdfhf', 10, 10, 'alluminio, sabbia, plastica, ecc...'),
 
-    'gomitolo-lana' => new Toys($dog, 'gomitolo-lana', 10, 'dgfsegsegseg', 10, 10, 'folgiettino spiegazioni: puoi farlo rotolare...'),
+    'gomitolo-lana' => new Toys($cat, 'gomitolo-lana', 10, 'dgfsegsegseg', 10, 10, 'folgiettino spiegazioni: puoi farlo rotolare...'),
 ];
