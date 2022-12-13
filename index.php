@@ -20,7 +20,42 @@ require_once __DIR__ . "/database/database.php";
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 my_card-box">
+                <div class="card p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime sit, tenetur iste est delectus dicta voluptas consectetur libero adipisci ut cum. Deleniti dolorum facilis sequi possimus eius. Eaque, dolorem!
+                    </p>
+                </div>
+            </div>
 
+            <div class="col-3 my_card-box">
+                <div class="card p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime sit, tenetur iste est delectus dicta voluptas consectetur libero adipisci ut cum. Deleniti dolorum facilis sequi possimus eius. Eaque, dolorem!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 my_card-box">
+                <div class="card p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime sit, tenetur iste est delectus dicta voluptas consectetur libero adipisci ut cum. Deleniti dolorum facilis sequi possimus eius. Eaque, dolorem!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 my_card-box">
+                <div class="card p-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime sit, tenetur iste est delectus dicta voluptas consectetur libero adipisci ut cum. Deleniti dolorum facilis sequi possimus eius. Eaque, dolorem!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
