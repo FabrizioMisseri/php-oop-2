@@ -1,4 +1,6 @@
 <?php
+
+require_once __DIR__ . "./category_class.php";
 class Product
 {
     public $name;
@@ -6,7 +8,7 @@ class Product
     public $code;
     public $category;
 
-    public function __construct(String $category, String $name, Int $price, String $code)
+    public function __construct($category, String $name, Int $price, String $code)
     {
         $this->category = $category;
         $this->name = $name;

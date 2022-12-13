@@ -9,7 +9,7 @@ class Food extends Product
     public $kcal;
     public $ingredients;
 
-    public function __construct(String $category, String $name, Int $price, String $code, Int $weight, String $kcal, String $ingredients)
+    public function __construct($category, String $name, Int $price, String $code, Int $weight, String $kcal, String $ingredients)
     {
         parent::__construct($category, $name,  $price,  $code);
         $this->weight = $weight;
@@ -24,7 +24,7 @@ class Toys extends Product
     public $height;
     public $guideline_txt;
 
-    public function __construct(String $category, String $name, Int $price, String $code, Int $width, Int $height, String $guideline_txt)
+    public function __construct($category, String $name, Int $price, String $code, Int $width, Int $height, String $guideline_txt)
     {
         parent::__construct($category, $name,  $price,  $code);
         $this->width = $width;
@@ -39,7 +39,7 @@ class Kennel extends Product
     public $height;
     public $materials;
 
-    public function __construct(String $category, String $name, Int $price, String $code, Int $width, Int $height, String $materials)
+    public function __construct($category, String $name, Int $price, String $code, Int $width, Int $height, String $materials)
     {
         parent::__construct($category, $name,  $price,  $code);
         $this->width = $width;
