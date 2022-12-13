@@ -4,20 +4,14 @@ class Product
     public $name;
     public $price;
     public $code;
+    public $category;
 
-    public function __construct(String $name, Int $price, String $code)
+    public function __construct(String $category, String $name, Int $price, String $code)
     {
+        $this->category = $category;
         $this->name = $name;
         $this->price = $price;
         $this->code = $code;
-    }
-
-
-    // debug-function
-    public function printProduct()
-    {
-        $variable = "$this->name, " . $this->price . ", $this->code.";
-        return $variable;
     }
 }
 
