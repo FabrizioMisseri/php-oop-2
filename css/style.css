@@ -5,3 +5,7 @@ body {
 .my_card-box {
     padding: 2rem;
 }
+
+ul {
+    list-style: none;
+}

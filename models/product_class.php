@@ -15,7 +15,15 @@ class Product
         $this->price = $price;
         $this->code = $code;
     }
+
+    // debug
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 
-require_once __DIR__ . "./products_classes.php";
+require_once __DIR__ . "./food.php";
+require_once __DIR__ . "./toys.php";
+require_once __DIR__ . "./kennel.php";
