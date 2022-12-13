@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "./models/product_class.php";
+require_once __DIR__ . "./models/Product.php";
 
 $cat = new Category('cat');
 $dog = new Category('dog');
@@ -20,15 +20,18 @@ require_once __DIR__ . "/database/database.php";
 </head>
 
 <body>
-    <div class="container my_wrapper">
+    <div class="container">
         <div class="row">
             <?php foreach ($array_data as $product) { ?>
                 <div class="col-4 my_card-box">
+                    <!-- CARD -->
                     <div class="card p-3">
+                        <!-- titolo comune Products -->
                         <h4 class="text-center">
                             <?php echo $product->name ?>
                         </h4>
                         <ul>
+                            <!-- blocco dati comune Products -->
                             <li>
                                 <?php echo "codice-articolo: " . $product->code ?>
                             </li>
@@ -42,8 +45,44 @@ require_once __DIR__ . "/database/database.php";
                                     echo "animale: gatto";
                                 } ?>
                             </li>
+
+                            <!-- verifica per FOODS -->
+                            <?php if (get_class($product) == 'Food') { ?>
+                                <li>
+                                    peso: <?php echo $product->weight ?>
+                                </li>
+                                <li>
+                                    kcal: <?php echo $product->kcal ?>
+                                </li>
+                                <li>
+                                    ingredients: <?php echo $product->ingredients ?>
+                                </li>
+                                <!-- verifica per TOYS -->
+                            <?php } else if (get_class($product) == 'Toys') { ?>
+                                <li>
+                                    larghezza: <?php echo $product->width ?>
+                                </li>
+                                <li>
+                                    altezza: <?php echo $product->height ?>
+                                </li>
+                                <li>
+                                    istruzioni: <?php echo $product->guideline_txt ?>
+                                </li>
+                                <!-- verifica per KENNEL -->
+                            <?php } else if (get_class($product) == 'Kennel') { ?>
+                                <li>
+                                    larghezza: <?php echo $product->width ?>
+                                </li>
+                                <li>
+                                    altezza: <?php echo $product->height ?>
+                                </li>
+                                <li>
+                                    materiali: <?php echo $product->materials ?>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
+                    <!-- / CARD -->
                 </div>
             <?php } ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "./category_class.php";
+require_once __DIR__ . "./Category.php";
 class Product
 {
     public $name;
@@ -24,6 +24,6 @@ class Product
 }
 
 
-require_once __DIR__ . "./food.php";
-require_once __DIR__ . "./toys.php";
-require_once __DIR__ . "./kennel.php";
+require_once __DIR__ . "./Food.php";
+require_once __DIR__ . "./Toys.php";
+require_once __DIR__ . "./Kennel.php";
