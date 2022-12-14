@@ -22,6 +22,15 @@ require_once __DIR__ . "/database/database.php";
 <body>
     <div class="container">
         <div class="row">
+
+
+            <div class="col-4 my_card-box">
+                <div class="card p-3">
+                    Manca un 'trait' ed un 'exception'. Sono influenzato li aggiungo questo fine settimana.
+                </div>
+            </div>
+
+
             <?php foreach ($array_data as $product) { ?>
                 <div class="col-4 my_card-box">
                     <!-- CARD -->
@@ -93,6 +102,9 @@ require_once __DIR__ . "/database/database.php";
                     </div>
                     <!-- / CARD -->
                 </div>
+
+
+
             <?php } ?>
 
         </div>
